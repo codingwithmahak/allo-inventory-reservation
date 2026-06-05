@@ -8,6 +8,7 @@ async function main() {
     console.log("Database already seeded, skipping");
     return;
   }
+  
 
   const warehouse1 = await prisma.warehouse.create({
     data: { name: "New York", location: "Brooklyn, NY" },
